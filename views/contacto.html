@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+  <!--  comienzo del head -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contacto</title>
+  </head>
+
+  <!--  Comienzo del body  -->
+  <body>
+    <!--Comienzo de header-->
+    <header class="header">
+      <div class="header__logo">
+        <a href="../index.html">
+          <img src="../img/logo.png" alt="Logo de la marca" height="60" />
+        </a>
+      </div>
+      <nav class="header__menu">
+        <ul>
+          <li>
+            <a href="../index.html" class="header__menu--link">Inicio</a>
+          </li>
+          <li>
+            <a href="../views/quienesSomos.html" class="header__menu--link"
+              >Quienes Somos</a
+            >
+          </li>
+          <li>
+            <a href="../views/nuestrosProductos.html" class="header__menu--link"
+              >Nuestros Productos</a
+            >
+          </li>
+          <li>
+            <a
+              href="../views/nuestrosProveedores.html"
+              class="header__menu--link"
+              >Nuestros Proveedores</a
+            >
+          </li>
+          <li>
+            <a href="../views/contacto.html" class="header__menu--link"
+              >Contacto</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--Comienzo de Main-->
+    <main>
+      <h1 class="main__title">Contactanos!</h1>
+
+      <!--Comienzo de formulario de contacto-->
+      <div>
+        <form action="" method="get" class="main__form">
+          <fieldset>
+            <legend>Dejanos tu mensaje!</legend>
+
+            <div>
+              <textarea
+                name="mensaje"
+                id="mensaje"
+                cols="50"
+                rows="10"
+                class="parrafos"
+              ></textarea>
+            </div>
+
+            <br /><br />
+
+            <div>
+              <label for="nombreApellido">Nombre y apellido:</label>
+              <br />
+              <input
+                type="text"
+                name="nombreApellido"
+                id="nombreApellido"
+                class="parrafos"
+              />
+            </div>
+
+            <br />
+
+            <div>
+              <label for="email">E-mail:</label>
+              <br />
+              <input type="email" name="email" id="email" class="parrafos" />
+            </div>
+
+            <br />
+
+            <div>
+              <label for="numeroTelefono">Numero de telefono:</label>
+              <br />
+              <input
+                type="tel"
+                name="telefono"
+                id="numeroTelefono"
+                class="parrafos"
+              />
+            </div>
+
+            <br />
+
+            <div>
+              <label for="tipoContacto">Motivo del contacto: </label>
+              <select
+                name="MotivoDelContacto: "
+                id="tipoContacto"
+                class="parrafos"
+              >
+                <option value="Null">-</option>
+                <option value="Cliente">Cliente</option>
+                <option value="Proveedor">Proveedor</option>
+                <option value="Other">Otro</option>
+              </select>
+            </div>
+
+            <br />
+
+            <div>
+              <input
+                type="checkbox"
+                name="newsletter"
+                id="newsletter"
+                value="yes"
+              />
+              <label for="newsletter"
+                >Deseo recibir información y enterarme de las novedades.</label
+              >
+            </div>
+
+            <br />
+
+            <div>
+              <input type="reset" value="Borrar formulario" />
+              <input type="submit" value="Enviar" />
+            </div>
+          </fieldset>
+        </form>
+
+        <div class="contact">
+          <p>
+            Si queres probar nuestros platos o ser nuestro proveedor, dejanos un
+            mensaje.
+          </p>
+        </div>
+
+        <div class="contact">
+          <p>
+            maildelaempresa@maildelaempresa.com.ar <br />
+            Telefono: (011) 4-XXX-XXXX <br />
+            CABA, Argentina
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!--Comienzo del Footer-->
+    <footer class="footer">
+      <span>
+        <a href="index.html" class="footer__logo">
+          <img src="../img/logo.png" alt="Logo de la marca" height="20" />
+        </a>
+        <p class="footer__paragraph">
+          <strong>Come'n'Eat ©</strong> - desarrollado en
+          <em>Argentina, 2021</em>
+        </p>
+      </span>
+    </footer>
+  </body>
+</html>

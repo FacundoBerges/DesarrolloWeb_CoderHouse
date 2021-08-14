@@ -1,0 +1,152 @@
+/* ------ General ------ */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-size: 1rem;
+  color: #000;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
+/* ------ Header ------ */
+header {
+  background-color: #e4e4e4;
+  overflow: auto;
+  height: 4rem;
+  padding: 1.3rem;
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  display: inline;
+}
+
+.header__menu {
+  list-style: none;
+}
+
+.header__menu ul li {
+  display: inline-block;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.header__menu--link {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.header__menu--link:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* ------ Main ------ */
+main {
+  display: block;
+  position: relative;
+  background-image: linear-gradient(to bottom, #fff, #828282);
+  padding-top: 2rem;
+}
+
+.main__title {
+  display: block;
+  position: relative;
+  font-size: 3.5rem;
+  font-weight: 800;
+  text-align: center;
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.main__paragraph {
+  padding: 2rem 3rem 2rem 3rem;
+  text-align: justify;
+}
+
+.main__image {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+img:hover {
+  transition: all 2s;
+  transform: scale(0.9);
+  border-radius: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: 3rem 18rem 18rem 18rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.grid__item--title {
+  font-weight: 700;
+  font-style: italic;
+}
+
+.grid__name {
+  font-weight: 600;
+}
+
+.grid__info {
+  font-weight: 400;
+}
+
+li {
+  list-style-type: none;
+  text-align: left;
+  padding: 0 1rem 0 1rem;
+}
+
+.proveedores {
+  display: block;
+  margin: 1rem 1rem 0rem 3rem;
+  padding-bottom: 2rem;
+}
+
+.proveedores__text {
+  display: inline;
+  margin-left: 1rem;
+  text-align: right;
+}
+
+.main__form {
+  display: inline-block;
+  margin: 1rem;
+  background-color: rgb(205, 226, 166);
+}
+
+.contact {
+  display: block;
+  padding: 0.5rem 1rem 1.5rem 1rem;
+}
+
+/* ------ Footer ------ */
+footer {
+  display: block;
+  background-color: #beb9b9;
+  text-align: left;
+  height: 1.5rem;
+}
+
+.footer__logo {
+  display: inline-block;
+}
+
+.footer__paragraph {
+  display: inline;
+}
