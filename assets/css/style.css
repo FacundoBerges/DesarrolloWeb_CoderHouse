@@ -33,14 +33,14 @@ body {
   margin-bottom: 7rem;
 }
 
-.contenedor-parallax {
+.parallax__container {
   position: relative;
-  height: 400px;
+  height: 385px;
   overflow: hidden;
 }
 
-.parallax {
-  background-image: url(../../img/Holosphere_world2.jpg);
+.parallaxDates {
+  background-image: url(../../img/Holosphere_world.jpg);
   position: absolute;
   background-attachment: fixed;
   background-position: center;
@@ -48,6 +48,25 @@ body {
   background-size: cover;
   width: 100%;
   height: 100vh;
+}
+
+.parallaxAbout {
+  background-image: url(../../img/Pryda_Logo.jpg);
+  position: absolute;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.about__text {
+  color: grey;
+}
+
+.about__img {
+  border-radius: 20px;
 }
 
 .location {

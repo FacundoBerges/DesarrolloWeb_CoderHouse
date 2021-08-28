@@ -1,124 +1,355 @@
 <!DOCTYPE html>
-<html lang="es">
-  <!--  comienzo del head -->
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <title>Nuestros proveedores</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <title>Contact</title>
+    <link rel="stylesheet" href="../scss/style.css" />
   </head>
 
-  <!--  Comienzo del body  -->
-  <body>
-    <!--Comienzo de header-->
-    <header class="header">
-      <div class="header__logo">
-        <a href="../index.html">
-          <img src="../img/logo.png" alt="Logo de la marca" height="60" />
-        </a>
+  <body class="vh-100 body__color">
+    <!-- Comienzo de header -->
+    <header class="position-relative mb-5">
+      <div class="container">
+        <!-- Barra de navegacion -->
+        <nav
+          class="navbar navbar-expand-lg navbar-dark fixed-top"
+          id="navbar__style"
+        >
+          <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="../index.html">
+              <img
+                src="../img/eric-prydz-logo.png"
+                alt="Logo de Eric Prydz"
+                height="50"
+              />
+            </a>
+            <!-- Menu responsive-->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNavAltMarkup"
+            >
+              <div class="navbar-nav">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Home</a
+                >
+                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link active" href="music.html">Albums & EP's</a>
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="../views/dates.html"
+                  >Live show dates</a
+                >
+                <a class="nav-link" href="contact.html">Contact</a>
+              </div>
+            </div>
+          </div>
+        </nav>
       </div>
-      <nav class="header__menu">
-        <ul>
-          <li>
-            <a href="../index.html" class="header__menu--link">Inicio</a>
-          </li>
-          <li>
-            <a href="../views/quienesSomos.html" class="header__menu--link"
-              >Quienes Somos</a
-            >
-          </li>
-          <li>
-            <a
-              href="../views/nuestrosProductos.html"
-              class="header__menu--link"
-              >Nuestros Productos</a
-            >
-          </li>
-          <li>
-            <a
-              href="../views/nuestrosProveedores.html"
-              class="header__menu--link"
-              >Nuestros Proveedores</a
-            >
-          </li>
-          <li>
-            <a href="../views/contacto.html" class="header__menu--link"
-              >Contacto</a
-            >
-          </li>
-        </ul>
-      </nav>
     </header>
+    <!-- Fin de header  -->
 
-    <!--Comienzo de Main-->
-    <main>
-      <section>
-        <h1 class="main__title" "sec">Nuestros proveedores</h1>
-        <br />
+    <!-- Comienzo de main -->
+    <main class="container-fluid g-0">
+      <div class="container pt-3 body_style">
+        <div class="row mt-1">
+          <div class="col-12 text-center text-light fw-bold">
+            <h2 class="my-5">MUSIC</h2>
+          </div>
+        </div>
 
-        <!--Articulos con imagenes de proveedores-->
-        <article class="proveedores">
-          <a href="https://www.molinos.com.ar/" target="_blank">
-            <img
-              src="../img/Molinos_logo.png"
-              alt="Logo de Molinos"
-              height="70"
-            />
-          </a>
-          <p class="proveedores__text">
-            Texto proveedores 1: Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Omnis in placeat sapiente!
-          </p>
-        </article>
-        <br />
+        <!-- Section con albums / ep's-->
+        <section class="row text-light main">
+          <div
+            class="
+              mt-4
+              mb-3
+              py-2
+              col-12
+              main__subtitle
+              border-bottom border-light
+            "
+          >
+            <h3>Eric Prydz</h3>
+          </div>
+          <div class="col-12 align-items-start py-2">
+            <div class="container-fluid px-0">
+              <a
+                href="https://open.spotify.com/album/4NNdLCqeVIW05mdQiG2zua?si=VWrkRJRkRz6LuRSSeFtKUw&dl_branch=1"
+                target="_blank"
+              >
+                <img
+                  src="../img/EricPrydzPresentsPryda.jpg"
+                  alt="Eric Prydz presents Pryda"
+                  height="200rem"
+                />
+              </a>
+              <a
+                href="https://open.spotify.com/album/2Kwbn1H4KMGZAe4MS6uDzU?si=OrprQ7knTd6HYbyMJpFRtQ&dl_branch=1"
+                target="_blank"
+              >
+                <img
+                  src="../img/EricPrydzOpus.jpg"
+                  alt="Eric Prydz Opus"
+                  height="200rem"
+                />
+              </a>
+              <a
+                href="https://open.spotify.com/track/02dPa4nXABwnFzjZosKxsk?si=7af7795fc72f45a1"
+                target="_blank"
+              >
+                <img
+                  src="../img/EricPrydzNopus.jpg"
+                  alt="Eric Prydz Nopus EP"
+                  height="200rem"
+                />
+              </a>
+              <a
+                href="https://open.spotify.com/track/0FoSiffuAmaJ3VyPaebY6I?si=1d8a31c37adc41e7"
+                target="_blank"
+              >
+                <img
+                  src="../img/MidnightCityEPRemix.jpg"
+                  alt="M83 Midnight city, Eric Prydz Remix"
+                  height="200rem"
+                />
+              </a>
+            </div>
+          </div>
+          <div
+            class="
+              mt-4
+              mb-3
+              py-2
+              col-12
+              main__subtitle
+              border-bottom border-light
+            "
+          >
+            <h3>Pryda</h3>
+          </div>
+          <div class="col-12 align-items-start py-2">
+            <div class="container-fluid px-0">
+              <a
+                href="https://open.spotify.com/album/4fpkx2JGRedr0QEtngqwnn?si=Mi9M7kLjQgCUVO6_L6f9YQ&dl_branch=1"
+                target="_blank"
+              >
+                <img
+                  src="../img/Pryda15Vol3.jpg"
+                  alt="Pryda 15, Vol. 3 EP"
+                  height="200rem"
+                />
+              </a>
+              <a
+                href="https://open.spotify.com/album/2wYgnlaBE58Iix8L98LVEm?si=zqc4-FzhRBeO8HTkqiOnZw&dl_branch=1"
+                target="_blank"
+              >
+                <img
+                  src="../img/Pryda15Vol2.jpg"
+                  alt="Pryda 15, Vol. 2 EP"
+                  height="200rem"
+                />
+              </a>
+              <a
+                href="https://open.spotify.com/album/2MSprf6584peQvdVMWAEMt?si=H8YeUXFcQ6-UTY30PZZvdw&dl_branch=1"
+                target="_blank"
+              >
+                <img
+                  src="../img/Pryda15Vol1.jpg"
+                  alt="Pryda 15, Vol. 1 EP"
+                  height="200rem"
+                />
+              </a>
+            </div>
+          </div>
 
-        <article class="proveedores">
-          <a href="https://www.laserenisima.com.ar/" target="_blank">
-            <img
-              src="../img/La_serenisima_greenlogo.svg.png"
-              alt="Logo de La serenisima"
-              height="50"
-            />
-          </a>
-          <p class="proveedores__text">
-            Texto proveedores 2: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit maxime omnis animi!
-          </p>
-        </article>
-        <br />
+          <div
+            class="
+              mt-4
+              mb-3
+              py-2
+              col-12
+              main__subtitle
+              border-bottom border-light
+            "
+          >
+            <h3>Cirez D</h3>
+          </div>
+          <div class="col-12 align-items-start py-2">
+            <div class="container-fluid px-0">
+              <a
+                href="https://open.spotify.com/album/17RkuZtj1Yp1PK6YuZ9Edt?si=6S4_AHoHR02Es_p_UANOkA&dl_branch=1"
+                target="_blank"
+              >
+                <img
+                  src="../img/CirezD-Valborg-TheRaid.jpg"
+                  alt="Cirez D, Valborg / The Raid EP"
+                  height="200rem"
+                />
+              </a>
+              <a
+                href="https://open.spotify.com/album/6JG3cUbzdFyO5VoXMrpzDZ?si=ZUuqJq3aTwegwzkrhSxOpA&dl_branch=1"
+                target="_blank"
+              >
+                <img
+                  src="../img/CirezD-DareU-TheGlitch-BlackHole.jpg"
+                  alt="Cirez D, Dare U / The Glitch / Black Hole EP"
+                  height="200rem"
+                />
+              </a>
+              <a
+                href="https://open.spotify.com/track/2EXViaTEpUoqHeDOtdI0oK?si=e6c39665622f4973"
+                target="_blank"
+              >
+                <img
+                  src="../img/CirezD-TheAccuser.jpg"
+                  alt="Cirez D, The Accuser EP"
+                  height="200rem"
+                />
+              </a>
+            </div>
+          </div>
 
-        <article class="proveedores">
-          <a href="https://www.ultracomb.com.ar/" target="_blank">
-            <img
-              src="../img/ultracomb-logo.png"
-              alt="Logo de Ultracomb"
-              height="80"
-            />
-          </a>
-          <p class="proveedores__text">
-            Texto proveedores 3: Lorem ipsum dolor sit, amet consectetur adipisicing elit. A cum eum tempore earum vel. Reiciendis, dolore deserunt!
-          </p>
-        </article>
-      </section>
+          <div
+            class="
+              mt-4
+              mb-3
+              py-2
+              col-12
+              main__subtitle
+              border-bottom border-light
+            "
+          >
+            <h3>Tonja Holma</h3>
+          </div>
+          <div class="col-12 align-items-start py-2">
+            <div class="container-fluid px-0">
+              <a
+                href="https://open.spotify.com/track/1cKvom0orVIGR4a2dB9Jpm?si=9e48850324c04b65"
+                target="_blank"
+              >
+                <img
+                  src="../img/TonjaHolmaAllNight.jpg"
+                  alt="Tonja Holma, All Night EP"
+                  height="200rem"
+                />
+              </a>
+              <a
+                href="https://open.spotify.com/album/3uhGJsidl1qZH03uMPF9xT?si=7sEGywmwS-qicS13UC2M3A&dl_branch=1"
+                target="_blank"
+              >
+                <img
+                  src="../img/TonjaHolmaTOnjAEP.jpg"
+                  alt="Tonja Holma, TOnjA EP"
+                  height="200rem"
+                />
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
+    <!-- Fin del main -->
 
-    <!--Comienzo del Footer-->
-    <footer class="footer">
-      <span>
-        <a href="index.html" class="footer__logo">
-          <img src="../img/logo.png" alt="Logo de la marca" height="20" />
-        </a>
-        <p class="footer__paragraph">
-          <strong>Come'n'Eat ©</strong> - desarrollado en
-          <em>Argentina, 2021</em>
-        </p>
-      </span>
+    <!-- Comienzo del footer -->
+    <footer class="static-botom footer">
+      <div
+        class="
+          container-fluid
+          footer__style
+          border-top border-light
+          d-flex
+          justify-content-between
+          align-items-center
+        "
+      >
+        <span class="footer__style-text"
+          >© Copyright - developed non-profit by Facundo Berges - 2021</span
+        >
+        <!-- Social media -->
+        <div class="d-flex justify-content-end my-2">
+          <a
+            href="https://www.youtube.com/channel/UCOjTxt7xBAjh1NraToYYlog"
+            target="blank"
+          >
+            <img
+              src="../img/youtube-play-50.png"
+              alt="Youtube logo"
+              height="30"
+              class="pe-2 mediaIcon"
+            />
+          </a>
+          <a
+            href="https://open.spotify.com/artist/37U9sPqTZMd7AKJCWgcvkt?si=PEX4wz_IT_Cbcoit4vatqA&dl_branch=1"
+            target="blank"
+          >
+            <img
+              src="../img/spotify-50.png"
+              alt="Spotify logo"
+              height="30"
+              class="pe-2 mediaIcon"
+            />
+          </a>
+          <a href="https://www.facebook.com/EricPrydzOfficial" target="blank">
+            <img
+              src="../img/facebook-50.png"
+              alt="Facebook logo"
+              height="30"
+              class="pe-2 mediaIcon"
+            />
+          </a>
+          <a href="https://www.instagram.com/ericprydz/" target="blank">
+            <img
+              src="../img/instagram-50.png"
+              alt="Instagram logo"
+              height="30"
+              class="pe-2 mediaIcon"
+            />
+          </a>
+          <a href="https://twitter.com/ericprydz" target="blank">
+            <img
+              src="../img/twitter-cuadrado-50.png"
+              alt="Twitter logo"
+              height="30"
+              class="pe-2 mediaIcon"
+            />
+          </a>
+        </div>
+      </div>
     </footer>
+    <!-- Fin del footer -->
+
+    <!-- SCRIPTS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

@@ -1,0 +1,104 @@
+.marginSize-0 {
+  margin: 0rem auto;
+}
+
+.marginSize-1 {
+  margin: 5rem auto;
+}
+
+.marginSize-2 {
+  margin: 10rem auto;
+}
+
+.marginSize-3 {
+  margin: 15rem auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-size: 1rem;
+  color: white;
+}
+
+main {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  position: relative;
+}
+
+.body__color {
+  background-color: #000000;
+}
+
+#navbar__style {
+  background-color: #0c0e0e;
+}
+
+.section__maintenance {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+}
+
+.parallax__container {
+  position: relative;
+  height: 385px;
+  overflow: hidden;
+}
+
+.parallax__container .parallaxDates {
+  background-image: url(../img/Holosphere_world.jpg);
+  position: absolute;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: alto/2;
+}
+
+table .table__info {
+  color: #ccc;
+  font-weight: light;
+}
+
+.about .about__text {
+  color: grey;
+}
+
+.about .about__img {
+  border-radius: 20px;
+}
+
+.location {
+  text-align: center;
+}
+
+.footer__style {
+  background-color: #00000000;
+  color: #666;
+  font-size: 12px;
+}
+
+.footer__style .footer__style-text {
+  font-weight: 500;
+}
+
+.footer .mediaIcon:hover {
+  -webkit-transition: all 2s;
+  transition: all 2s;
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
+}
+
+footer :not(:hover) {
+  -webkit-transition: all 2s;
+  transition: all 2s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+/*# sourceMappingURL=style.css.map */
