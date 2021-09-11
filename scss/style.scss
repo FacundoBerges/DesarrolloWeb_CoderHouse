@@ -2,7 +2,7 @@ $alto: 100vh;
 
 @for $i from 0 to 4 {
   .marginSize-#{$i} {
-    margin: 5rem * $i auto;
+    margin: 3.3rem * $i auto;
   }
 }
 
@@ -67,7 +67,7 @@ table {
 
 .about {
   .about__text {
-    color: grey;
+    color: rgb(184, 179, 179);
   }
 
   .about__img {
@@ -83,19 +83,19 @@ table {
 
 .footer__style {
   background-color: #00000000;
-  color: #666;
   font-size: 12px;
   .footer__style-text {
     font-weight: 500;
+    color: rgb(160, 153, 153);
   }
 }
 
-.footer .mediaIcon:hover {
-  transition: all 2s;
+footer .mediaIcon:hover {
+  transition: all 1s;
   transform: scale(0.85);
 }
 
 footer :not(:hover) {
-  transition: all 2s;
+  transition: all 1s;
   transform: scale(1);
 }
