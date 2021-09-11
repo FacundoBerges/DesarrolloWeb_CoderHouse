@@ -1,4 +1,19 @@
-/* ------------ General ------------ */
+.marginSize-0 {
+  margin: 0rem auto;
+}
+
+.marginSize-1 {
+  margin: 3.3rem auto;
+}
+
+.marginSize-2 {
+  margin: 6.6rem auto;
+}
+
+.marginSize-3 {
+  margin: 9.9rem auto;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +25,7 @@ html {
   color: white;
 }
 
-body {
+main {
   font-family: "Lato", sans-serif;
   font-weight: 300;
   position: relative;
@@ -20,13 +35,9 @@ body {
   background-color: #000000;
 }
 
-/* ------------ Header ------------ */
-
 #navbar__style {
   background-color: #0c0e0e;
 }
-
-/* ------------ Main ------------ */
 
 .section__maintenance {
   margin-top: 7rem;
@@ -39,33 +50,27 @@ body {
   overflow: hidden;
 }
 
-.parallaxDates {
-  background-image: url(../../img/Holosphere_world.jpg);
+.parallax__container .parallaxDates {
+  background-image: url(../img/Holosphere_world.jpg);
   position: absolute;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: alto/2;
 }
 
-.parallaxAbout {
-  background-image: url(../../img/Pryda_Logo.jpg);
-  position: absolute;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
+table .table__info {
+  color: #ccc;
+  font-weight: light;
 }
 
-.about__text {
-  color: grey;
+.about .about__text {
+  color: #b8b3b3;
 }
 
-.about__img {
+.about .about__img {
   border-radius: 20px;
 }
 
@@ -73,164 +78,27 @@ body {
   text-align: center;
 }
 
-/* ------------ Footer ------------ */
-
 .footer__style {
   background-color: #00000000;
-  color: white;
   font-size: 12px;
 }
 
-.mediaIcon:hover {
-  transition: all 2s;
-  transform: scale(0.85);
+.footer__style .footer__style-text {
+  font-weight: 500;
+  color: #a09999;
+}
+
+footer .mediaIcon:hover {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
 }
 
 footer :not(:hover) {
-  transition: all 2s;
-  transform: scale(1);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
-
-/*
-
-.body__color {
-  background-color: #333;
-}
-
-/* ------ Header ------ */ /*
-header {
-  background-color: #e4e4e4;
-  overflow: auto;
-  height: 4rem;
-  padding: 1.3rem;
-  margin-top: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header__logo {
-  display: inline;
-}
-
-.header__menu {
-  list-style: none;
-}
-
-.header__menu ul li {
-  display: inline-block;
-  text-align: center;
-  padding: 0.5rem;
-}
-
-.header__menu--link {
-  color: #000;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.header__menu--link:hover {
-  color: rgba(0, 0, 0, 0.5);
-}
-
-/* ------ Main ------ */ /*
-main {
-  display: block;
-  position: relative;
-  background-image: linear-gradient(to bottom, #fff, #828282);
-  padding-top: 2rem;
-}
-
-.main__title {
-  display: block;
-  position: relative;
-  font-size: 3.5rem;
-  font-weight: 800;
-  text-align: center;
-  padding-top: 1rem;
-  margin-bottom: 2rem;
-}
-
-.main__paragraph {
-  padding: 2rem 3rem 2rem 3rem;
-  text-align: justify;
-}
-
-.main__image {
-  text-align: center;
-  padding-bottom: 1rem;
-}
-
-img:hover {
-  transition: all 2s;
-  transform: scale(0.9);
-  border-radius: 10px;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 2fr 2fr 2fr;
-  grid-template-rows: 3rem 18rem 18rem 18rem;
-  justify-items: center;
-  align-items: center;
-}
-
-.grid__item--title {
-  font-weight: 700;
-  font-style: italic;
-}
-
-.grid__name {
-  font-weight: 600;
-}
-
-.grid__info {
-  font-weight: 400;
-}
-
-li {
-  list-style-type: none;
-  text-align: left;
-  padding: 0 1rem 0 1rem;
-}
-
-.proveedores {
-  display: block;
-  margin: 1rem 1rem 0rem 3rem;
-  padding-bottom: 2rem;
-}
-
-.proveedores__text {
-  display: inline;
-  margin-left: 1rem;
-  text-align: right;
-}
-
-.main__form {
-  display: inline-block;
-  margin: 1rem;
-  background-color: rgb(205, 226, 166);
-}
-
-.contact {
-  display: block;
-  padding: 0.5rem 1rem 1.5rem 1rem;
-}
-
-/* ------ Footer ------ */ /*
-footer {
-  display: block;
-  background-color: #beb9b9;
-  text-align: left;
-  height: 1.5rem;
-}
-
-.footer__logo {
-  display: inline-block;
-}
-
-.footer__paragraph {
-  display: inline;
-}
-
-*/
+/*# sourceMappingURL=style.css.map */
