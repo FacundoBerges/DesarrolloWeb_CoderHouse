@@ -66,11 +66,11 @@ table {
 }
 
 .about {
-  .about__text {
+  .&__text {
     color: rgb(184, 179, 179);
   }
 
-  .about__img {
+  .&__img {
     border-radius: 20px;
   }
 }
