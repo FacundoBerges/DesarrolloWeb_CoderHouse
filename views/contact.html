@@ -16,7 +16,7 @@
       integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
       crossorigin="anonymous"
     />
-    <title>Contact</title>
+    <title>Contact - Eric Prydz</title>
     <link rel="stylesheet" href="../scss/style.css" />
   </head>
 
@@ -78,18 +78,18 @@
     <!-- Comienzo de main -->
     <main class="container-fluid g-0">
       <div class="container">
-        <div class="row marginSize-2">
+        <div class="row-col marginTop-2 marginBottom-1">
           <div class="col-12 text-center text-light fw-bold">
-            <h1>Contact</h1>
+            <h1>CONTACT</h1>
           </div>
         </div>
 
         <!--Comienzo de formulario de contacto-->
         <section>
-          <div class="container">
-            <div class="row align-items-center mb-3">
-              <div class="col-12 col-lg-8">
-                <form action="" method="get" class="form-control">
+          <div class="container marginBottom-3">
+            <div class="row-col row-col-md-2 d-lg-flex align-items-center mb-4 ">
+              <div class="col-lg-8 contact">
+                <form action="" method="get" class="form-control contact__form">
                   <fieldset>
                     <legend>
                       Let us know what you think about Eric Prydz, and stay in
@@ -99,10 +99,11 @@
                       <textarea
                         name="message"
                         id="message"
-                        class="form-control mb-2 parrafos"
+                        class="form-control mb-2"
                         cols="80"
                         rows="10"
                         placeholder="Leave your message here."
+                        required
                       ></textarea>
                     </div>
                     <div class="row flex-row">
@@ -113,8 +114,9 @@
                           type="text"
                           name="NameSurname"
                           id="NameSurname"
-                          class="form-control parrafos"
+                          class="form-control"
                           placeholder="Name Surname"
+                          required
                         />
                       </div>
                       <div class="col-12 col-md-6">
@@ -124,8 +126,9 @@
                           type="email"
                           name="email"
                           id="email"
-                          class="form-control parrafos"
+                          class="form-control"
                           placeholder="e-mail address"
+                          required
                         />
                       </div>
                       <div class="col-12 col-md-6">
@@ -135,7 +138,7 @@
                           type="tel"
                           name="phoneNumber"
                           id="phoneNumber"
-                          class="form-control parrafos"
+                          class="form-control"
                           placeholder="(+0) 0-000-0000"
                         />
                       </div>
@@ -145,7 +148,7 @@
                         <select
                           name="contactReason"
                           id="contactReason"
-                          class="form-control parrafos"
+                          class="form-control"
                         >
                           <option value="null">-</option>
                           <option value="shows">Shows</option>
@@ -167,20 +170,23 @@
                       >
                     </div>
 
-                    <div>
-                      <input type="reset" value="Delete form" />
-                      <input type="submit" value="Send" />
+                    <div class="py-3">
+                      
+                      <input class="btn btn-outline-dark px-2" type="submit" value="Submit">
+                      <input class="btn btn-outline-dark px-2 mx-1" type="reset" value="Reset">
                     </div>
                   </fieldset>
                 </form>
               </div>
-              <div class="col-12 col-lg-4">
-                <div class="text-center text-light">
+              <div class="col-lg-4">
+                <div class="text-center text-light ">
                   <div class="my-5">
                     <h3>Contact info</h3>
                   </div>
-                  <div>
-                    <p>contact@ericprydz.com</p>
+                  <div ">
+                    <p id="contactEmail">
+                      <a href="mailto:contact@ericprydz.com" subject=Contact%20Eric%20Prydz%20" >contact@ericprydz.com</a>
+                    </p>
                     <p>Phone number: (+1) 202-555-0126</p>
                     <p>Los Angeles, California, US</p>
                   </div>
