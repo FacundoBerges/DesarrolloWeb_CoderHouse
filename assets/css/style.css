@@ -1,17 +1,57 @@
-.marginSize-0 {
-  margin: 0rem auto;
+.marginTop-0 {
+  margin-top: 0rem;
 }
 
-.marginSize-1 {
-  margin: 3.3rem auto;
+.marginTop-1 {
+  margin-top: 3rem;
 }
 
-.marginSize-2 {
-  margin: 6.6rem auto;
+.marginTop-2 {
+  margin-top: 6rem;
 }
 
-.marginSize-3 {
-  margin: 9.9rem auto;
+.marginTop-3 {
+  margin-top: 9rem;
+}
+
+.marginTop-4 {
+  margin-top: 12rem;
+}
+
+.marginTop-5 {
+  margin-top: 15rem;
+}
+
+.marginTop-6 {
+  margin-top: 18rem;
+}
+
+.marginBottom-0 {
+  margin-bottom: 0rem;
+}
+
+.marginBottom-1 {
+  margin-bottom: 3rem;
+}
+
+.marginBottom-2 {
+  margin-bottom: 6rem;
+}
+
+.marginBottom-3 {
+  margin-bottom: 9rem;
+}
+
+.marginBottom-4 {
+  margin-bottom: 12rem;
+}
+
+.marginBottom-5 {
+  margin-bottom: 15rem;
+}
+
+.marginBottom-6 {
+  margin-bottom: 18rem;
 }
 
 * {
@@ -28,15 +68,19 @@ html {
 main {
   font-family: "Lato", sans-serif;
   font-weight: 300;
-  position: relative;
 }
 
 .body__color {
-  background-color: #000000;
+  background-color: #070707f3;
 }
 
 #navbar__style {
   background-color: #0c0e0e;
+}
+
+#navbar__style :hover,
+#navbar__style :active {
+  color: #ccc;
 }
 
 .section__maintenance {
@@ -44,26 +88,13 @@ main {
   margin-bottom: 7rem;
 }
 
-.parallax__container {
-  position: relative;
-  height: 385px;
-  overflow: hidden;
-}
-
-.parallax__container .parallaxDates {
-  background-image: url(../img/Holosphere_world.jpg);
-  position: absolute;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: alto/2;
-}
-
 table .table__info {
   color: #ccc;
   font-weight: light;
+}
+
+#contactEmail {
+  text-decoration: none;
 }
 
 .about .about__text {
@@ -74,16 +105,29 @@ table .table__info {
   border-radius: 20px;
 }
 
+.modal .modal-title {
+  color: #0c0e0e;
+}
+
+.modal .modal-body {
+  color: #000;
+}
+
 .location {
   text-align: center;
 }
 
-.footer__style {
-  background-color: #00000000;
+footer {
+  position: absolute;
+  width: 100%;
+}
+
+footer .footer__style {
+  background-color: #070707f3;
   font-size: 12px;
 }
 
-.footer__style .footer__style-text {
+footer .footer__style .footer__style-text {
   font-weight: 500;
   color: #a09999;
 }
